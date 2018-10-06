@@ -5,5 +5,7 @@ clean:
 test:
 	./test.sh
 release:
+	git rm --cached test/*
+	git rm --cached test.sh
 	rm -Rf test
 	rm -f test.sh
