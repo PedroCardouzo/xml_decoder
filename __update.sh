@@ -12,6 +12,6 @@ while getopts 'd' OPT; do
 done
 
 git pull origin master
-if $DEV != 'true'; then
-	rm -R .git
+if [[ $DEV != 'true' ]]; then
+	rm -Rf .git
 fi
