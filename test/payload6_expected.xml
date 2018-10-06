@@ -1,0 +1,32 @@
+<!-- ReplicationType: ptp | FullTrasmissionStartDate: 2014-12-28 -->
+<DecodedEmployees>
+	<queryCompoundEmployeeResponse>
+		<sfobject>
+			<id>2214</id>
+			<type>CompoundEmployee</type>
+			<log>
+				<log_item>
+					<per_person_uuid>18B9F6804538412995474BC81451F907</per_person_uuid>
+					<person_id>2214</person_id>
+					<person_id_external>E22854</person_id_external>
+					<code>COMPOUND_EMPLOYEE/EMPLOYEE_ERROR</code>
+					<severity>ERROR</severity>
+					<message_text>Data for user id E22854 can't be returned: Please see log items for more information.</message_text>
+				</log_item>
+				<log_item>
+					<per_person_uuid>18B9F6804538412995474BC81451F907</per_person_uuid>
+					<person_id>2214</person_id>
+					<person_id_external>E22854</person_id_external>
+					<code>COMPOUND_EMPLOYEE/OVERLAPPING_TIME_SLICE_ERROR</code>
+					<severity>ERROR</severity>
+					<message_text>&quot;job_information&quot; with start date 2016-03-28 and end date 9999-12-31 overlaps with record with start date 2016-04-25 and end date 9999-12-31.</message_text>
+				</log_item>
+			</log>
+			<execution_timestamp>2018-08-29T20:04:32.000Z</execution_timestamp>
+			<version_id>1808P0</version_id>
+		</sfobject>
+		<numResults>1</numResults>
+		<hasMore>false</hasMore>
+		<querySessionId>67a0a116-fa91-400e-92df-819369f3e598</querySessionId>
+	</queryCompoundEmployeeResponse>
+</DecodedEmployees>
