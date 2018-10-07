@@ -5,7 +5,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 PROGRAM="$DIR"/"$PROGRAM_NAME"
 
-
 if [ -f "$1" ]; then  # if provided a file, use the file data
 	INPUT_FILE="$1"
 	in_data="$(cat "$1")"
@@ -14,14 +13,12 @@ else				  # if not, use stdin
 	in_data="$(cat)"
 fi
 
+# remove <root> and </root> tags
 
 
 # remove <root> and </root> tags
-re="(.*)(<root>|</root>)(.*)";
-while [[ $in_data =~ $re ]]; do
-  in_data=${BASH_REMATCH[1]}${BASH_REMATCH[3]}
-done
-
+in_data=${in_data//<root>/};
+in_data=${in_data//<\/root>/};
 
 output="$(echo "$in_data" | python3 $PROGRAM)"
 

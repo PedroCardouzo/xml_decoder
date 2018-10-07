@@ -46,3 +46,5 @@ else
 fi
 
 echo $TESTS_PASSED/$TOTAL_TESTS "TESTS PASSED"
+
+echo -ne $NO_COLOR
