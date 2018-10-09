@@ -17,8 +17,8 @@ fi
 
 
 # remove <root> and </root> tags
-in_data=${in_data//<root>/};
-in_data=${in_data//<\/root>/};
+in_data=${in_data##<[Rr]oot>>};
+in_data=${in_data%%<\/[Rr]oot>};
 
 output="$(echo "$in_data" | python3 $PROGRAM)"
 
